@@ -1,0 +1,74 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0b164b 0%, #581943 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+#main-container, .meme-container {
+    text-align: center;
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    position: relative;
+    max-width: 500px;
+    margin: 20px;
+}
+
+.meme-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.meme-container p {
+    font-size: 20px;
+    color: #333;
+    font-weight: 500;
+}
+
+h1 {
+    color: #b8b5b6;
+    margin-bottom: 40px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+#sim {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#nao {
+    background-color: #f44336;
+    color: white;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
